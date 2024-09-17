@@ -1,0 +1,13 @@
+name: Test Workflow
+on:
+ workflow_dispatch:
+jobs:
+ job1:
+  name: Job 1
+  runs-on: ubuntu-latest
+  outputs:
+   message: "Hi"
+  steps:
+    - name : This is step 1 in Job 1
+      run : echo "Hello world from step1"
+
