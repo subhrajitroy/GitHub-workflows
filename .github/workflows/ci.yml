@@ -20,5 +20,19 @@ jobs:
    steps:
     - name : This is step 2 in Job 2
       run : echo "Final step"
+ job3:
+   name: Job 3
+   runs-on: ubuntu-latest
+   needs:
+    - job1
+   steps:
+    - name : This is step 1 in Job 3
+      run : echo "Final step 3"
+ job4:
+    name: Job 4
+    runs-on: ubuntu-latest
+    steps:
+     - name : This is step 1 in Job 4
+       run : echo "Final step 4"
     
 
